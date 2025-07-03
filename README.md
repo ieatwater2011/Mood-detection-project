@@ -3,22 +3,6 @@ Detects someones mood
 Mood Detection with detectNet
 This project implements a real-time mood detection system using NVIDIA's detectNet deep learning inference library. It leverages pre-trained models or custom-trained models with detectNet to identify facial expressions and infer mood, providing a foundation for various interactive applications.
 
-Table of Contents
-Project Overview
-
-Features
-
-Technologies Used
-
-Setup and Installation
-
-Usage
-
-Contributing
-
-License
-
-Project Overview
 The goal of this project is to demonstrate how detectNet can be utilized beyond its typical object detection capabilities to analyze more nuanced visual information, specifically human emotions. By integrating detectNet with a mood classification layer (either directly within the detectNet model's output or through post-processing), the system can identify faces in a video stream or image and then classify the mood associated with each detected face. This could be applied in areas like interactive art installations, user experience analysis, or assistive technologies.
 
 detectNet is a high-performance object detection inference library and a command-line tool provided by NVIDIA's jetson-inference repository. It's optimized for NVIDIA Jetson platforms (such as Jetson Nano, Xavier NX, etc.) and allows for real-time object detection using various pre-trained models (like SSD, Faster R-CNN, YOLO) or custom models. In this project, detectNet is primarily used for face detection, and the subsequent mood classification can be handled by either:
